@@ -1,0 +1,15 @@
+{
+    "ts-node": {
+        "files": true
+    },
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowJs": true,
+        "sourceMap": true,
+        "lib": ["DOM","es2020"],
+        "outDir": "dist/app"
+    },
+    "includes": ["app/**/*.d.ts", "app/**/*.ts"],
+    "exclude": ["nodes_modules"]
+}

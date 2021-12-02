@@ -1,0 +1,16 @@
+{
+    "controllerPathGlobs": ["app/controllers/*Controller.ts"],
+    "spec": {
+      "outputDirectory": "./dist",
+      "entryFile": "./app/server.ts",
+      "host": "localhost:8086",
+      "basePath": "/"
+    },
+    "routes": {
+      "basePath": "/",
+      "entryFile": "./app/index.ts",
+      "routesDir": "./app",
+      "middleware": "koa"
+    }
+  }
+  
