@@ -3,7 +3,7 @@
     "spec": {
       "outputDirectory": "./dist",
       "entryFile": "./app/server.ts",
-      "host": "localhost:8086",
+      "host": "localhost:8080",
       "basePath": "/"
     },
     "routes": {
