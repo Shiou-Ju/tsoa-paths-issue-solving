@@ -1,5 +1,5 @@
-import * as Koa from "koa";
-import * as Router from "@koa/router";
+import Koa from "koa";
+import Router from "@koa/router";
 import { RegisterRoutes } from "./routes";
 
 const app = new Koa();
@@ -13,4 +13,5 @@ RegisterRoutes(router);
 
 app.use(router.routes()).use(router.allowedMethods());
 
-export default app;
+export default app;  
+  
