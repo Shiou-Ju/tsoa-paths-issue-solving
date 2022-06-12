@@ -1,6 +1,7 @@
 import Koa from "koa";
 import Router from "@koa/router";
 import { RegisterRoutes } from "./routes";
+import testMiddleware from './testMiddleware';
 
 const app = new Koa();
 
@@ -12,6 +13,7 @@ const router = new Router();
 RegisterRoutes(router);
 
 app.use(router.routes()).use(router.allowedMethods());
+app.use(testMiddleware())
 
 export default app;  
   

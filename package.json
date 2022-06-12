@@ -5,16 +5,22 @@
   "main": "index.ts",
   "scripts": {
     "start": "yarn tsoa routes && ts-node app/index.ts",
-    "build": "yarn tsoa routes"
+    "build": "yarn tsoa routes",
+    "pure": "ts-node app/index.ts",
+    "dev": "nodemon yarn start"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@koa/router": "^10.1.1",
+    "@tsoa/runtime": "^4.1.0",
     "@types/koa__router": "^8.0.11",
     "koa": "^2.13.4",
     "ts-node": "^10.8.1",
     "tsoa": "^4.1.0",
     "typescript": "^4.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
