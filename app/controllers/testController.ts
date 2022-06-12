@@ -24,4 +24,9 @@ export class TestController extends Controller {
   async getById(@Path() id: number): Promise<string> {
     return `${id}\n`;
   }
+
+  @Get('/{id}/detail')
+  async getDetailById(@Path() id: number): Promise<string> {
+    return `${id}: has some info\n`;
+  }
 }
